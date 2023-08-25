@@ -11,7 +11,7 @@ import {Modal} from '../Modal'
 import { useTodos } from './useTodos';
 import {TodoForm} from '../TodoForm'
 import {TodoHeader} from '../TodoHeader'
-import {ChangeAlertWithStorageListener} from '../ChangeAlert'
+import {ChangeAlert} from '../ChangeAlert'
 
 function App() {
   const {
@@ -104,7 +104,7 @@ function App() {
         </Modal>
       )}
 
-      <ChangeAlertWithStorageListener sincronize={sincronizeTodos} />
+      <ChangeAlert sincronize={sincronizeTodos} />
     </>
   );
 }
